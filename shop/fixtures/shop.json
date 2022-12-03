@@ -1,0 +1,158 @@
+[
+    {
+        "model": "shop.category",
+        "pk": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+        "fields": {
+            "name": "PC Games",
+            "description": "Desktop Computer Games for the Gamer in you."
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+        "fields": {
+            "name": "Console Games",
+            "description": "Console exclusive Games for the Console Gamer in you."
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "1b5e0aeb-c369-4107-8d53-323a753851f0",
+        "fields": {
+            "name": "Spider-Man: Miles Morales",
+            "description": "Spider-Man: Miles Morales is an open-world action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment. The sequel to 2018s Marvel's Spider-Man, the game continues the story of the New York's web-slinger, this time featuring Miles Morales, a teenage friend of Peter Parker who gained spider-spider abilities. The game will focus on Miles' fight for peace in the city, threatened by another turf war.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "40.05",
+            "stock": 9999999,
+            "available": true,
+            "created": "2022-11-09T14:28:17.802Z",
+            "updated": "2022-11-09T14:28:17.802Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "262c652c-5718-4135-a805-9d3b9f92dc88",
+        "fields": {
+            "name": "Minecraft Java Edition",
+            "description": "Minecraft Java Edition is one of the two official versions of the sandbox survival game, released in 2011 by Mojang Studios for PC. Enter the unbelievably massive world of cubes and design it the way you want. Select a relaxed, creative mode or fight monsters in Survival mode. Solo or in multiplayer - in Minecraft, you can do anything!",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "19.99",
+            "stock": 99999999,
+            "available": true,
+            "created": "2022-11-09T14:36:51.639Z",
+            "updated": "2022-11-09T14:36:51.639Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "3538774b-eb10-4fc3-a9e5-4ee97ca83271",
+        "fields": {
+            "name": "Euro Truck Simulator 2",
+            "description": "Have you ever dreamed of being a truck driver? Dreams come true, and now you can experience the truck driver’s life. Everyone knows that factories produce, and supermarkets sell the products that we buy every day. However, a big number of truck drivers are hard-working people who provide us those products. But for their work, we would not get all those imported food, cosmetics and clothes. Now, you can be one of them and get to know their duties.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "6.90",
+            "stock": 99999999,
+            "available": true,
+            "created": "2022-11-09T14:31:31.529Z",
+            "updated": "2022-11-09T14:31:31.529Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "42904639-f4e0-4ee2-af1a-50c25d2cea24",
+        "fields": {
+            "name": "The Last of Us Part II",
+            "description": "The Last of Us Part II is an action-adventure game with survival horror elements released as an exclusive for PlayStation 4 in 2020 as the sequel to the Last of Us released in 2013. The action of the game is set in the post-apocalyptic United States around five years after the events presented in the first game where the world has been devastated by a mysterious pandemic.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "23.53",
+            "stock": 999999,
+            "available": true,
+            "created": "2022-11-09T14:40:37.129Z",
+            "updated": "2022-11-09T14:40:37.129Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "5d01bf86-6b54-4d1a-95fa-0bf027bb6789",
+        "fields": {
+            "name": "Ghost of Tsushima",
+            "description": "Ghost of Tsushima is an action-adventure title from the developers of Sly Cooper and Infamous series. In the game, the player controls the character of samurai Jin Sakai, fighting against Mongol invaders on the titular island of Tsushima. The gameplay combines open combat and stealth mechanics. Ghost of Tsushima received favorable reviews from the critics.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "34.56",
+            "stock": 999999,
+            "available": true,
+            "created": "2022-11-09T14:39:07.279Z",
+            "updated": "2022-11-09T16:27:17.785Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "6a8f1839-2539-470c-852c-8bbfd8991f5f",
+        "fields": {
+            "name": "Horizon Zero Dawn",
+            "description": "A unique gaming experience that puts you in the role of a post-apocalyptic robo-animals hunter, Aloy, who sets out on the quest to uncover her own past and prevent an even worse future to happen.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "19.40",
+            "stock": 999999999,
+            "available": true,
+            "created": "2022-11-09T14:30:11.380Z",
+            "updated": "2022-11-09T14:30:11.380Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "76975e51-0896-45a9-b4bf-44f712ec7f86",
+        "fields": {
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "description": "The Legends of Zelda: Breath of the Wild takes you to the full of mysteries and adventures world of Hyrule. As Link, your mission is going to be saving the world from evil by using your abilities acquired throughout your adventure. In this open-world action-RPG, you don’t follow any beaten track, as spending time on exploring the world rewards you in unforgettable memories, collectibles, upgrades, and new abilities. Here, you decide how you play the game as even the way or time you finish it isn’t dictated by any rules.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "25.00",
+            "stock": 9999999,
+            "available": true,
+            "created": "2022-11-09T14:34:02.081Z",
+            "updated": "2022-11-09T14:34:02.081Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "93caa114-4b73-4ba0-aadc-5e4a22344158",
+        "fields": {
+            "name": "God of War",
+            "description": "God of War is an action video game with RPG elements, developed by Santa Monica Studio and released thanks to PlayStation PC LLC in 2022 for personal computers. It is an adaptation of the title from 2018, which was available exclusively for PlayStation 4 users. In this installment, Kratos, having completed his violent mission in Greece, goes to the far North to once again face mythological beasts and mighty gods. This time, however, he will not be traveling alone.",
+            "category": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
+            "price": "36.37",
+            "stock": 99999999,
+            "available": true,
+            "created": "2022-11-09T14:37:55.896Z",
+            "updated": "2022-11-09T14:37:55.896Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "b6b7b98b-e860-44e6-bbcc-d3e05c802f3d",
+        "fields": {
+            "name": "Project Zomboid",
+            "description": "The project was first released as a technological demo in 2011. Since then, PZ is being constantly developed and it regularly receives new content and updates improving the gameplay experience. Project Zomboid allows players to experience the life of one of few survivors, lost in a world full of flesh-eating monsters. The game features a vast, open-world map, a complex crafting system, and many mechanics, characteristic for survival games genre.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "9.24",
+            "stock": 9999999,
+            "available": true,
+            "created": "2022-11-09T14:35:41.801Z",
+            "updated": "2022-11-09T14:35:41.801Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "ca2a5389-ebd7-4462-a5e5-45b3972fda1d",
+        "fields": {
+            "name": "Grand Theft Auto V",
+            "description": "Experience Rockstar Games critically acclaimed open world game, Grand Theft Auto V. Grand Theft Auto V also comes with Grand Theft Auto Online, the dynamic and ever-evolving Grand Theft Auto universe with online play for up to 30 players.",
+            "category": "116fa26d-6580-4d1b-a319-8ad526551cb3",
+            "price": "11.79",
+            "stock": 9999999,
+            "available": true,
+            "created": "2022-11-09T14:41:33.470Z",
+            "updated": "2022-11-09T14:41:33.470Z"
+        }
+    }
+]
