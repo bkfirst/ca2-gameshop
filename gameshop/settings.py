@@ -40,6 +40,12 @@ INSTALLED_APPS = [
     'accounts',
     'shop',
     'search_app',
+    'cart',
+    'stripe',
+    'order',
+    #3rd party
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +72,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.menu_links',
+                'cart.context_processors.counter',
             ],
         },
     },
@@ -133,3 +140,9 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+STRIPE_SECRET_KEY = 'sk_test_51M6zMfFGCzA9a4JHKWH4K9AU5s32qczUinp1gbkkxKLEgwWDcrACDPEQPdVMsZEChzzweYAoOkcVXCGu4rVNgx4000K1aN5emd'
+STRIPE_PUBLISHABLE_KEY =  'pk_test_51M6zMfFGCzA9a4JHB7P5hBtlI8okKqMhNF079ZahPuDsNWwwqpT4UrwNlXVzun3qlgTjg7deqU1yM2FcP72w31AV00HfnTArsI'
+
+LOGIN_REDIRECT_URL = 'shop:all_products'
+LOGOUT_REDIRECT_URL = 'shop:all_products'
