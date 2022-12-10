@@ -11,18 +11,18 @@ Cart - Online Games Store
 <div>
     <div class="text-center">
         <br>
-        <h1 class="text-center my_title">
+        <h1 class="text-center my_title text-light">
             Your shopping cart is empty
         </h1>
         <br>
-        <p class="text-center">
+        <p class="text-center text-light">
             Please click <a href="{% url 'shop:all_products' %}">here</a> to continue shopping.
         </p>
     </div>
 </div>
 {% else %}
 <div>
-    <div class="text-center">
+    <div class="text-center text-light">
         <br>
         <h1 class="text-center my_title">
             Your shopping cart
@@ -33,9 +33,9 @@ Cart - Online Games Store
 <div class="row mx-auto">
     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
         <table class="table my_custom_table">
-            <thead class="my_custom_thead">
+            <thead class="my_custom_thead bg-dark">
                 <tr>
-                    <th colspan="5">
+                    <th class="text-light"colspan="5">
                         Your items
                     </th>
                 </tr>
@@ -43,12 +43,12 @@ Cart - Online Games Store
             </thead>
             <tbody>
                 {% for cart_item in cart_items %}
-                <tr>
+                <tr class="text-light">
                     <td>
                         <a href="{{cart_item.product.get_url}}"><img src="{{cart_item.product.image.url}}" alt=""
                                 class="float-left rounded custom_image"></a>
                     </td>
-                    <td class="text-left">
+                    <td class="text-left text-light">
                         {{cart_item.product.name}}
                         <br>
                         Unit Price: €{{cart_item.product.price}}
@@ -83,21 +83,21 @@ Cart - Online Games Store
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
         <table class="table my_custom_table">
-            <thead class="my_custom_thead">
+            <thead class="my_custom_thead bg-dark">
                 <tr>
-                    <th>
+                    <th class="text-light">
                         Checkout
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-light">
                 <tr>
-                    <td>
+                    <td class="text-light">
                         Please review your shopping cart items before proceeding with the order payment.
                     </td>
                 </tr>
                 {% if voucher %}
-                <tr class="subtotal">
+                <tr class="subtotal text-light">
                     <td>Total</td>
                     <td colspan="4"></td>
                     <td class="num">€{{ total|floatformat:"2" }}</td>
@@ -108,19 +108,19 @@ Cart - Online Games Store
                         ({{ voucher.discount }}% off)
                     </td>
                     <td colspan="4"></td>
-                    <td class="num neg">
+                    <td class="num neg text-light">
                         - €{{ discount|floatformat:"2" }}
                     </td>
                 </tr>
-                <tr class="total">
-                    <td>Total</td>
+                <tr class="total text-light">
+                    <td class="text-light">Total</td>
                     <td colspan="4"></td>
                     <td class="num">
                         €{{ new_total|floatformat:"2" }}
                     </td>
                 </tr>
                 {% else %}
-                <tr class="total">
+                <tr class="total text-light">
                     <td>Total</td>
                     <td colspan="4"></td>
                     <td class="num">
@@ -130,13 +130,14 @@ Cart - Online Games Store
                 {% endif %}
             </tbody>
         </table>
-        <p>Apply a voucher:</p>
-        <form action="{% url 'vouchers:apply' %}" method="post">
+        <p class="text-light">Apply a voucher:</p>
+        <form class="text-light"action="{% url 'vouchers:apply' %}" method="post">
             {{ voucher_apply_form }}
             <input type="submit" value="Apply">
             {% csrf_token %}
         </form>
         </tbody>
+        <br>
         </table>
         <form action="" method="POST">
             {% csrf_token %}
@@ -149,7 +150,7 @@ Cart - Online Games Store
 
         <div class="mx-auto">
             <a href="{% url 'shop:all_products' %}" class="btn btn-secondary btn-block 
-                            my_custom_button">Continue
+                            my_custom_button text-dark">Continue
                 Shopping</a>
         </div>
     </div>

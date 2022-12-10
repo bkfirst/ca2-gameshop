@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container navbar-dark bg-dark">
     <div class="my_custom_menu">
         <ul>
             {% if user.is_authenticated %}
-            <li>
-                Welcome, <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" 
+            <li class="text-light">
+                Welcome, <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown" 
                 aria-haspopup="true" aria-expanded="false">{{ user.username }} 
                 <i class="fas fa-user-circle"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
@@ -11,14 +11,14 @@
                 </div>
             </li>
             <li>
-                <a href="{% url 'logout' %}">Sign Out <i class="fas fa-sign-out-alt"></i></a>
+                <a href="{% url 'logout' %}" class="text-light">Sign Out <i class="fas fa-sign-out-alt"></i></a>
             </li>
             {% else %}
             <li>
-                <a href="{% url 'signup' %}">Sign Up <i class="fas fa-user-plus"></i></a>
+                <a href="{% url 'signup' %}" class="text-light">Sign Up <i class="fas fa-user-plus"></i></a>
             </li>
             <li>
-                <a href="{% url 'login' %}">Sign In <i class="fas fa-sign-in-alt"></i></a>
+                <a href="{% url 'login' %}" class="text-light">Sign In <i class="fas fa-sign-in-alt"></i></a>
             </li>
             {% endif %}
         </ul>
