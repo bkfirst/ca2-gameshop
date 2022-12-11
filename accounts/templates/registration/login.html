@@ -10,16 +10,16 @@
 {% block content %}
     <div class="container">
         <br>
-        <h1 class="my_title text-center">Login or Create a New Account</h1>
+        <h1 class="my_title text-center text-light">Login or Create a New Account</h1>
         <br>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center my_custom_div">
                 <br>
-                <h2 class="my_title">New Customer?</h2>
+                <h2 class="my_title text-light">New Customer?</h2>
                 <br>
                 <a href="{% url 'signup' %}" class="btn btn-secondary">Create New Account</a>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 bg-light">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-light">
                 <div>
                     <br>
                     <h2 class="my_title">Registered Customers Only</h2>
@@ -27,6 +27,7 @@
                         {% csrf_token %}
                         <p>{{ form | crispy }}</p>
                         <button type="submit" class="btn btn-secondary">Login</button>
+                        <a href="/accounts/password-reset/">Forget Password?</a>
                     </form>
                     <br>
                 </div>
