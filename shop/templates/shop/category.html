@@ -19,7 +19,7 @@ See Our Games Collection - Perfect Games Store
 {% if category %}
 <div class="row my_row_class">
     <div class="mx-auto">
-        <p ><a href="{% url 'shop:all_products' %}">Our Games Collection</a> | {{category.name}}</p>
+        <p class="light-text"><a  class="light-text" href="{% url 'shop:all_products' %}">Our Games Collection</a> | {{category.name}}</p>
     </div>
 </div>
 {% endif %}
@@ -29,8 +29,8 @@ See Our Games Collection - Perfect Games Store
 </div>
 <br>
 <div>
-    <h1 class="text-center my_title">{{category.name}}</h1>
-    <p class="text-justify">{{category.description}}</p>
+    <h1 class="text-center my_title text-light">{{category.name}}</h1>
+    <p class="text-center text-light">{{category.description}}</p>
 </div>
 {% else %}
 <img class="my_image my_image_padding" src="{% static 'images/Banner.png' %}" alt="Our Products Collection">
