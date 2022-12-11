@@ -147,3 +147,5 @@ STRIPE_PUBLISHABLE_KEY =  'pk_test_51M6zMfFGCzA9a4JHB7P5hBtlI8okKqMhNF079ZahPuDs
 
 LOGIN_REDIRECT_URL = 'shop:all_products'
 LOGOUT_REDIRECT_URL = 'shop:all_products'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
